@@ -287,6 +287,84 @@ local speed = true
     loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnyJonson/My-scripts/refs/heads/main/Harked%20Reborn%20(NOT%20MY%20SCRIPT)'))()
     end,
  })
+local function SyncKill()
+   
+
+local player = game.Players.LocalPlayer
+local enabled = true
+repeat
+   
+
+player.Character.Humanoid.Health = 0
+wait(0.0000000000001)
+player.Character.Humanoid.Health = 1
+
+until enabled == false
+
+
+
+
+
+end
+
+
+
+
+
+local function GetPlayerDataKeySystemSaveAsUserSystem()
+--..Nothing here xD
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+local Button = Home:CreateButton({
+   Name = "KillSync",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+SyncKill()
+   end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Rayfield:LoadConfiguration()
