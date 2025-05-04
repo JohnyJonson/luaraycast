@@ -126,16 +126,16 @@ local Mainwindow = Rayfield:CreateWindow({
             -- The function that takes place when the slider changes
             -- The variable (Value) is a number which correlates to the value the slider is currently at
             repeat
-
+local speed = true
                 task.wait(1)
-                game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 74
+                game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = Value
                 
                 task.wait(0.755)
                 game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
-                until speed["Enabled"] == false
+                until speed == false
 
 
-
+                
 
             
             end,
@@ -201,13 +201,14 @@ local Mainwindow = Rayfield:CreateWindow({
                 -- The function that takes place when the slider changes
                 -- The variable (Value) is a number which correlates to the value the slider is currently at
                 repeat
-            
+            local speeds = true
                     task.wait(1)
-                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 74
+                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = Value
                     
                     task.wait(0.090)
                     game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
-                    until WW["Enabled"] == false
+                                
+                    until speeds == false
                 
             end,
         
@@ -220,15 +221,15 @@ local Mainwindow = Rayfield:CreateWindow({
 
  local Tab = Mainwindow:CreateTab("Exploits", 4483362458) -- Title, Image
 
- local Section = Tab:CreateSection("Johnyjonson My-Scripts LOADING")
+ local Section = Tab:CreateSection("Johnyjonson My-Scripts")
 
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "flycheats.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
     end,
  })
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "ChatBypass.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
@@ -236,14 +237,14 @@ local Mainwindow = Rayfield:CreateWindow({
     end,
  })
  
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "PSX.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
     loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnyJonson/My-scripts/refs/heads/main/PSX.lua'))()
     end,
  })
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "Liogity X.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
@@ -256,21 +257,21 @@ local Mainwindow = Rayfield:CreateWindow({
         end
     end,
  })
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "KavoUI.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
         loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnyJonson/My-scripts/refs/heads/main/KavoUI.lua'))()
     end,
  })
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "IOHUB.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
         loadstring(game:HttpGet('https://raw.githubusercontent.com/JohnyJonson/My-scripts/refs/heads/main/IoHub'))()
     end,
  })
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "HeatSeakerBypass.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
@@ -279,7 +280,7 @@ local Mainwindow = Rayfield:CreateWindow({
  })
  
 
- local Button = Section:CreateButton({
+ local Button = Home:CreateButton({
     Name = "harked reborn NOT MINE.lua",
     Callback = function()
     -- The function that takes place when the button is pressed
