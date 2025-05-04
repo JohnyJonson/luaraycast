@@ -203,7 +203,7 @@ local speed = true
                 repeat
             local speeds = true
                     task.wait(1)
-                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = Value
+                    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 64
                     
                     task.wait(0.090)
                     game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
