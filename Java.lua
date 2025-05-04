@@ -288,7 +288,7 @@ local Mainwindow = Rayfield:CreateWindow({
  })
 
 
-
+Rayfield:LoadConfiguration()
 
 
 
